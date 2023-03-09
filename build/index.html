@@ -9,6 +9,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="./js/main.js"></script>
+    
   </head>
 
   <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
@@ -70,21 +71,27 @@
         <article class="sm:w-1/2">
           <h2
             class="max-w-md text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-left sm:text-5xl"
+            data-aos="fade-right"
+            data-aos-easing="ease-in"
+            data-aos-duration="1000"
           >
             We Boldy Go
-            <span class="text-indigo-700 dark:text-indigo-300"
+            <span class="text-indigo-700 dark:text-indigo-300" data-aos="fade-right" data-aos-easing="ease-in"
+             data-aos-duration="1000"
               >Where No Rocket</span
             >
             Has Gone Before...
           </h2>
           <p
-            class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left"
+            class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left" data-aos="fade-right" data-aos-easing="ease-in"
+             data-aos-duration="1000"
           >
             We're building rockets for the next century today. From the moon to
             Mars, Jupiter and beyond...
           </p>
           <p
-            class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left"
+            class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left" data-aos="fade-right" data-aos-easing="ease-in"
+             data-aos-duration="1000"
           >
             Think Acme Rockets.
           </p>
@@ -93,8 +100,8 @@
         <img
           class="w-1/2"
           data-aos="fade-in"
-          data-aos-delay="1000"
           data-aos-easing="ease-in"
+          data-aos-duration="1000"
           src="./img/rocketdab.png"
           alt="Rocket Dab"
         />
@@ -138,7 +145,7 @@
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            data-aos-delay="1000"
+            data-aos-delay="200"
           >
             <img
               src="./img/rocketride.png"
@@ -164,7 +171,7 @@
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            data-aos-delay="1500"
+            data-aos-delay="400"
           >
             <img
               src="./img/rocketlaunch.png"
@@ -197,7 +204,7 @@
         >
           Testimonials
         </h2>
-        <figure class="my-12">
+        <figure class="my-12 " data-aos="fade-in"  data-aos-easing="ease-in"  >
           <blockquote
             class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black"
           >
@@ -215,7 +222,7 @@
             &#8212;Wile E. Coyote, Genius
           </figcaption>
         </figure>
-        <figure class="my-12">
+        <figure class="my-12" data-aos="fade-in"  data-aos-easing="ease-in">
           <blockquote
             class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black"
           >
@@ -236,7 +243,7 @@
             &#8212;Marvin The Martian &amp; K-9
           </figcaption>
         </figure>
-        <figure class="my-12">
+        <figure class="my-12" data-aos="fade-in"  data-aos-easing="ease-in">
           <blockquote
             class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black"
           >
@@ -262,7 +269,7 @@
         <h2
           class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
         >
-          Contact Us
+          <span class="auto-type"></span>
         </h2>
         <form
           action=""
@@ -321,8 +328,16 @@
         </div>
       </section>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       AOS.init();
+      let typed = new Typed('.auto-type', {
+        strings: ['Contact Us'],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+      });
     </script>
   </body>
 </html>
